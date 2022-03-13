@@ -1,0 +1,139 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".MainActivity"
+    android:background="@drawable/marvel">
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:id="@+id/card_viewid"
+            card_view:cardBackgroundColor="#85C11084"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="4dp">
+        <TextView
+            android:id="@+id/idMD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="id"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageMD"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:textStyle="italic" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:id="@+id/card_viewname"
+            card_view:cardBackgroundColor="#85C11084"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="4dp">
+        <TextView
+            android:id="@+id/nameMD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="SUPER HERO NAME"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageMD"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageMD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:id="@+id/card_view2"
+            card_view:cardBackgroundColor="#906c0278"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/imageMD"
+            android:id="@+id/descriptionMD"
+            android:textColor="#ffffff"
+            tools:text="DESCRIPTION"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            tools:ignore="MissingConstraints" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/card_view3"
+            card_view:cardBackgroundColor="#90d416c6"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="4dp">
+        <TextView
+            android:id="@+id/ComicsMD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            tools:text="COMICS"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            />
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:id="@+id/card_view4"
+            card_view:cardBackgroundColor="#90d416c6"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="4dp">
+            <TextView
+                android:id="@+id/SeriesMD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                tools:text="SERIES"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
